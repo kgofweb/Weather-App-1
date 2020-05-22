@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* Ciel dégagé */
+.clear {
+        background: url('https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+/* Nuages Couvert */
+.clouds {
+        background: url('https://images.pexels.com/photos/158163/clouds-cloudporn-weather-lookup-158163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        /* background: url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+}
+
+/* Pluie Couvert */
+.rain {
+        background: url('https://images.pexels.com/photos/763398/pexels-photo-763398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+/* Neige */
+.snow {
+        background: url('https://images.pexels.com/photos/65911/winter-nature-season-trees-65911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+
+
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat';
+}
+
+body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
+        color: #FFF;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+h1 {
+         font-size: 3em;
+         position: relative;
+}
+
+i.wi {
+        font-size: 5em;
+        line-height: 3em;
+}
+
+h2 {
+        font-size: 2em;
+}
+
+.tooltype {
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFF;
+        background: rgba(0, 0, 0, 0.8);
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 10px;
+        transition: opacity 0.5s, top 0.5s ;
+}
+
+h1:hover .tooltype {
+        top: -40px;
+        opacity: 1;
+}
