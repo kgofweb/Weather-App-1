@@ -1,5 +1,5 @@
-# meteo_api_js
-meteo app js
+# Weather web app
+Weather web app with pure JavaScript
 
 Simple weather web app with Pure JavaScript, no framework.
 
